@@ -22,5 +22,8 @@ df['age_group'] = pd.qcut(df['age'], q=5, labels=age_groups)
 #Al ser todos los valores de las columnas promo_code_used y discount_applied iguales elimino la columna promo_code_used debido a que llega a ser redundante.
 df = df.drop('promo_code_used', axis=1)
 
+#Modifico el nombre de la columna para evitar posibles errores futuros en SQL Sever
+df = df.rename(columns={'purchase_amount_(usd)':'purchase_amount'})
+
 #Almaceno los datos filtrados en un nuevo csv para no pisar el anterior.
 df.to_csv('../data/customer_shopping_behavior_filtered.csv')
