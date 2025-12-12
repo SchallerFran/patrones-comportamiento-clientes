@@ -30,15 +30,19 @@ patrones-comportamiento-clientes/
 │   README.md
 │
 ├───data
-│   │   customer_shopping_behavior_filtered.csv   # Dataset filtrado y limpio
-│   │   SQLQuery-comportamiento-clientes.sql      # Consultas SQL realizadas
+│   │   customer_shopping_behavior_filtered.csv
+│   │   SQLQuery-comportamiento-clientes.sql
 │   │
 │   └───raw data
-│           customer_shopping_behavior.csv        # Dataset original
+│           customer_shopping_behavior.csv
 │
 └───src
-        ds-analisis.ipynb                         # Análisis exploratorio completo (EDA)
-        filtrado.py                               # Script de filtrado y procesamiento
+    │   ds-analisis.ipynb
+    │   filtrado.py
+    │
+    └───dashboard
+            Claro - Ruby Zafiro.json
+            dashboard ventas.pbix
 ```
 
 ---
