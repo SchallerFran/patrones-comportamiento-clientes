@@ -118,7 +118,7 @@ Las consultas están pensadas para facilitar análisis rápidos y reutilizables.
 
 ## 🚀 Tecnologías Utilizadas
 
-- <img width="30px" src="https://github.com/tandpfun/skill-icons/blob/main/icons/Python-Dark.svg" title="Python"/> **Python** (pandas, numpy, matplotlib, seaborn) 
+- <img width="30px" src="https://github.com/tandpfun/skill-icons/blob/main/icons/Python-Dark.svg" title="Python"/> **Python** (pandas, numpy) 
 - <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" title="SQL Server"/> **SQL Server**
 - <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" title="Jupyter"/> **Jupyter Notebook**
 - <img width="30px" src="https://github.com/microsoft/PowerBI-Icons/blob/main/SVG/Power-BI.svg" title="Power BI"/> **Power BI** (en construcción)
