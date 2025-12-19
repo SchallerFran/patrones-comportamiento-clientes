@@ -1,4 +1,5 @@
 import pandas as pd
+from sqlalchemy import create_engine
 
 df = pd.read_csv('../data/raw data/customer_shopping_behavior.csv')
 
@@ -27,3 +28,14 @@ df = df.rename(columns={'purchase_amount_(usd)':'purchase_amount'})
 
 #Almaceno los datos filtrados en un nuevo csv para no pisar el anterior.
 df.to_csv('../data/customer_shopping_behavior_filtered.csv')
+
+#Almaceno los datos filtrados en la tabla 'sales' base de datos de SQLServer.
+conn_str = (
+    "mssql+pyodbc://172.16.35.75/Customer"
+    "?driver=ODBC+Driver+17+for+SQL+Server"
+    "&trusted_connection=yes"
+)
+
+engine = create_engine(conn_str)
+
+df.to_sql("sales", con=engine, if_exists="replace", index=False)
